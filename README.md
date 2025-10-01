@@ -13,8 +13,7 @@
 
 ## 📁 Struttura attuale
 
-Alcune cartelle già presenti nella tua repo (esempio):
-
+* `primi_esercizi/` — primi esercizi per conoscere la sintassi
 * `variabili/` — esercizi su variabili, input/output
 * `tutorato/tutorato_1/` — esercizi del tutorato / lezioni guidate
 
