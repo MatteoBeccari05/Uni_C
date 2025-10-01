@@ -5,8 +5,6 @@
   <img src="https://img.shields.io/github/last-commit/MatteoBeccari05/Uni_C?style=for-the-badge&logo=git&logoColor=white"/>
 </p>
 
-
-
 # Uni_C — Esercizi in Linguaggio C
 
 *Repository con esercizi svolti all’università in C.*
@@ -19,8 +17,6 @@ Alcune cartelle già presenti nella tua repo (esempio):
 
 * `variabili/` — esercizi su variabili, input/output
 * `tutorato/tutorato_1/` — esercizi del tutorato / lezioni guidate
-
-Puoi adattare/aggiungere sezioni come `cicli/`, `funzioni/`, `puntatori/` ecc. se non già presenti.
 
 ---
 
