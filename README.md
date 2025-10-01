@@ -1,9 +1,10 @@
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Progetto%20Universitario-blue?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/github/repo-size/MatteoBeccari05/Uni_C?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/github/last-commit/MatteoBeccari05/Uni_C?style=for-the-badge&logo=git&logoColor=white"/>
+</p>
 
-![Progetto Universitario](https://img.shields.io/badge/Progetto%20Universitario-blue?style=for-the-badge&logo=github&logoColor=white)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/MatteoBeccari05/Uni_C?style=for-the-badge&logo=github&logoColor=white)
-![GitHub last commit](https://img.shields.io/github/last-commit/MatteoBeccari05/Uni_C?style=for-the-badge&logo=git&logoColor=white)
 
 
 # Uni_C — Esercizi in Linguaggio C
