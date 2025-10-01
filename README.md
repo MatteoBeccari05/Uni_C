@@ -19,7 +19,6 @@ Alcune cartelle già presenti nella tua repo (esempio):
 
 * `variabili/` — esercizi su variabili, input/output
 * `tutorato/tutorato_1/` — esercizi del tutorato / lezioni guidate
-* (E altre cartelle che aggiungerai man mano)
 
 Puoi adattare/aggiungere sezioni come `cicli/`, `funzioni/`, `puntatori/` ecc. se non già presenti.
 
