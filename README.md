@@ -13,6 +13,7 @@
 
 ## 📁 Struttura attuale
 
+* `esercizi_0210/` — esercizi 2 ottobre (date)
 * `debug/` — esercizi per allenarsi a debuggare
 * `primi_esercizi/` — primi esercizi per conoscere la sintassi
 * `variabili/` — esercizi su variabili, input/output
