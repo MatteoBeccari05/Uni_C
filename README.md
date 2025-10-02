@@ -13,6 +13,7 @@
 
 ## 📁 Struttura attuale
 
+* `debug/` — esercizi per allenarsi a debuggare
 * `primi_esercizi/` — primi esercizi per conoscere la sintassi
 * `variabili/` — esercizi su variabili, input/output
 * `tutorato/tutorato_1/` — esercizi del tutorato / lezioni guidate
