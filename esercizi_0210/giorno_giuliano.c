@@ -20,11 +20,11 @@ int main(){
     printf("Inserire l'anno: ");
     scanf("%d", &anno);
 
-    n0 = (mese-14)/12;
-    n1 = (1461*(anno+4800+n0))/4;
-    n2 = (367*(mese-2-(12*n0)))/12;
-    n3 = (3*(anno+4900+n0))/400;
-    jd = n1+n2-n3+giorno-32075;
+    n0 = ((mese - 14) / 12);
+    n1 = ((1461 * (anno + 4800 + n0)) / 4);
+    n2 = ((367 * (mese - 2 -(12 * n0))) / 12);
+    n3 = ((3 * (anno + 4900 + n0)) / 400);
+    jd = (n1 + n2 - n3 + giorno - 32075);
 
     printf("Giorno giuliano: %d\n", jd);
 }
