@@ -12,7 +12,7 @@ int main()
     printf("Inserire il numero del giorno: ");
     scanf("%d", &giorno);
 
-    if(giorno > 0  && giorno <8)
+    if(giorno > 0  && giorno < 8)
     {
         if(giorno == 1)
         {
