@@ -13,8 +13,10 @@
 
 ## 📁 Struttura attuale
 
+* `char/` — esercizi con i char
 * `controllo_di_flusso/` — esercizi con controlli if
 * `esercizi_0210/` — esercizi 2 ottobre (date)
+* `funzioni/` — esercizi con funzioni
 * `debug/` — esercizi per allenarsi a debuggare
 * `primi_esercizi/` — primi esercizi per conoscere la sintassi
 * `variabili/` — esercizi su variabili, input/output
