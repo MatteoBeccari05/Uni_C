@@ -99,12 +99,10 @@ int main()
             {
                 mese++;
                 giorno = 1;
-                printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
             }
             else
             {
                 giorno++;
-                printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
             }
         }
         else if (giorni_nel_mese(mese, anno) == 29)
@@ -113,12 +111,10 @@ int main()
             {
                 mese++;
                 giorno = 1;
-                printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
             }
             else
             {
                 giorno++;
-                printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
             }
         }
         else if (giorni_nel_mese(mese, anno) == 28)
@@ -127,12 +123,10 @@ int main()
             {
                 mese++;
                 giorno = 1;
-                printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
             }
             else
             {
                 giorno++;
-                printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
             }
         }
         else
@@ -144,21 +138,19 @@ int main()
                     anno++;
                     mese = 1;
                     giorno = 1;
-                    printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
                 }
                 else
                 {
                     mese++;
                     giorno = 1;
-                    printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
                 }
             }
             else
             {
                 giorno++;
-                printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
             }
         }
+        printf("Il giorno successivo è: %d/%d/%d\n", giorno, mese, anno);
     }
     else if(valida(giorno, mese, anno) == -1)
     {
