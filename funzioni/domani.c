@@ -12,11 +12,7 @@ uscire con codice -1 se l’utente scrive una data non valida.
 
 int bisestile(int anno)
 {
-    if (anno % 4 == 0 && anno % 100 != 0)
-    {
-        return 1;
-    }
-    else if (anno % 400 == 0)
+    if (anno % 4 == 0 && anno % 100 != 0 || anno % 400 == 0)
     {
         return 1;
     }
@@ -79,10 +75,7 @@ int valida(int giorno, int mese, int anno)
 
 int main()
 {
-    int giorno;
-    int mese;
-    int anno;
-
+    int giorno, mese, anno;
     input:
     printf("Inserisci il giorno: ");
     scanf("%d", &giorno);
