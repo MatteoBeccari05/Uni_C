@@ -18,6 +18,8 @@ int main()
     int a, b;
     printf("Inserire primo numero: ");
     scanf("%d", &a);
+    printf("Inserire secondo numero: ");
+    scanf("%d", &b);
     ordina(&a, &b);
     printf("%d %d\n", a, b);
     return 0;
