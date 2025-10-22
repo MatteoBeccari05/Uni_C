@@ -1,17 +1,17 @@
-/*Scrivere un programma che stampi il prodotto dei 
-cinque numeri interi inseriti dall’utente*/
+/*Si scriva un programma che legga da tastiera 5 
+numeri interi e ne stampi la somma.*/
 
 #include <stdio.h>
 
 int main()
 {
-    int num, prodotto = 1;
+    int num, somma = 0;
     for(int i = 0; i < 5; i++)
     {
         printf("Inserire numero %d: ", (i+1));
         scanf("%d", &num);
-        prodotto = prodotto * num;
+        somma = somma + num;
     }
 
-    printf("Prodotto: %d\n", prodotto);
+    printf("Somma: %d\n", somma);
 }
