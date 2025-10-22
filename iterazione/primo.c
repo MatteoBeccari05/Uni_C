@@ -1,3 +1,6 @@
+/*Verificare se un numero, richiesto all’utente, è primo, ossia se non ha 
+divisori interi a parte 1 e se stesso.*/
+
 #include <stdio.h>
 
 int main()
