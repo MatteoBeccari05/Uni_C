@@ -9,15 +9,15 @@ decrescendo tutti i valori compresi fra 10 e 5.
 
 int main()
 {
-    for (int i = 1; i < 10; i++)
+    for (int i = 0; i <= 10; i++)
     {
-        printf("%d", i);
+        printf("%d\n", i);
     }
     printf("\n");
 
-    for (int k = 9; k > 5; k--)
+    for (int k = 10; k >= 5; k--)
     {
-        printf("%d", k);
+        printf("%d\n", k);
     }
     printf("\n");
 }
