@@ -1,3 +1,9 @@
+/*
+Calcolare la fattorizzazione di un numero richiesto all’utente, ossia esprimere il numero
+come prodotto di potenze aventi come base numeri primi crescenti.
+Ad esempio, la fattorizzazione di 300 è 22 ˆ 3 ˆ 52.
+*/
+
 #include <stdio.h>
 
 int main()
