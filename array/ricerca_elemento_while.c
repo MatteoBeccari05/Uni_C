@@ -6,16 +6,16 @@ e, se lo trova, dica a quale indice.*/
 
 int main()
 {
-    int array[] = {4,3,8,5,1};
+    int array[] = {4, 3, 8, 5, 1};
     int trovato = 0, elemento, i;
 
     printf("Inserire il numero da cercare: ");
     scanf("%d", &elemento);
 
     i = 0;
-    while(!trovato && i < DIM)
+    while (!trovato && i < DIM)
     {
-        if(array[i] == elemento)
+        if (array[i] == elemento)
         {
             trovato = 1;
         }
@@ -25,7 +25,7 @@ int main()
         }
     }
 
-    if(trovato)
+    if (trovato)
     {
         printf("Numero %d trovato all'indice %d\n", elemento, i);
     }
@@ -33,5 +33,4 @@ int main()
     {
         printf("Nessun numero trovato\n");
     }
-
 }
