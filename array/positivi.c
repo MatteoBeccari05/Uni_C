@@ -5,22 +5,22 @@ int main()
 {
     int a[DIM], b[DIM], dl = 0;
 
-    for(int i= 0; i<DIM; i++)
+    for (int i = 0; i < DIM; i++)
     {
-        printf("Inserire numero %d: ", (i+1));
+        printf("Inserire numero %d: ", (i + 1));
         scanf("%d", &a[i]);
     }
 
-    for(int i = 0; i < DIM; i++)
+    for (int i = 0; i < DIM; i++)
     {
-        if(a[i] > 0)
+        if (a[i] > 0)
         {
-            b[dl]=a[i];
+            b[dl] = a[i];
             dl++;
         }
     }
 
-    for(int i = 0; i<dl; i++)
+    for (int i = 0; i < dl; i++)
     {
         printf("%d\n", b[i]);
     }
