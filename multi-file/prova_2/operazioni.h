@@ -1,0 +1,15 @@
+double somma_due_numeri(double a, double b);
+double differenza_due_numeri(double a, double b);
+double moltiplicazione_due_numeri(double a, double b);
+double divisione_due_numeri(double a, double b);
+double radice_n(double x, int n);
+double potenza(double base, int esp);
+double valore_assoluto(double x);
+double massimo(double a, double b);
+double minimo(double a, double b);
+double media_due_numeri(double a, double b);
+double media_n_numeri(double v[], int n);
+double somma_n(double v[], int n);
+double differenza_n(double v[], int n);
+double moltiplicazione_n(double v[], int n);
+double divisione_n(double v[], int n);
