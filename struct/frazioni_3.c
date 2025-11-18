@@ -19,7 +19,7 @@ typedef struct
 /// @brief Compone la frazione
 /// @param n numeratore
 /// @param d denominatore
-/// @return 
+/// @return
 Frazione frazione(int n, int d)
 {
     Frazione f;
@@ -29,16 +29,16 @@ Frazione frazione(int n, int d)
 }
 
 /// @brief Ritorna il denominatore
-/// @param f 
-/// @return 
+/// @param f
+/// @return
 int den(Frazione f)
 {
     return f.den;
 }
 
 /// @brief Ritorna il numeratore
-/// @param f 
-/// @return 
+/// @param f
+/// @return
 int num(Frazione f)
 {
     return f.num;
@@ -51,25 +51,33 @@ Frazione inputFrazione()
     int n, d;
     printf("Inserire numeratore: ");
     scanf("%d", &n);
-    printf("Inserire denominatore: ");
-    scanf("%d", &d);
+    do
+    {
+        printf("Inserire denominatore: ");
+        scanf("%d", &d);
+    } while (d == 0);
+
     return frazione(n, d);
 }
 
 /// @brief Calcola mcd tra due numeri
-/// @param a 
-/// @param b 
-/// @return 
+/// @param a
+/// @param b
+/// @return
 int mcd(int a, int b)
 {
     // lavoro con i valori assoluti
-    if (a < 0) a = -a;
-    if (b < 0) b = -b;
+    if (a < 0)
+        a = -a;
+    if (b < 0)
+        b = -b;
 
     // caso particolare: se a = 0 o b = 0
-    if (a == 0 && b == 0) return 1;   // MCD "neutro"
-    if (b == 0) return a;
-    
+    if (a == 0 && b == 0)
+        return 1; // MCD "neutro"
+    if (b == 0)
+        return a;
+
     int r;
     while (b != 0)
     {
@@ -86,7 +94,7 @@ int mcm(int a, int b)
 }
 
 /// @brief Stampa la frazione
-/// @param f 
+/// @param f
 void stampaFrazionaria(Frazione f)
 {
     int g = mcd(f.num, f.den);
@@ -97,17 +105,17 @@ void stampaFrazionaria(Frazione f)
 }
 
 /// @brief Stampa il risultato della frazione
-/// @param f 
+/// @param f
 void stampaDecimale(Frazione f)
 {
-    printf("%f\n", (float)num(f)/den(f));
+    printf("%f\n", (float)num(f) / den(f));
 }
 
 Frazione somma(Frazione f1, Frazione f2)
 {
     Frazione somma;
     somma.den = mcm(f1.den, f2.den);
-    somma.num = (somma.den/f1.den*f1.num) + (somma.den/f2.den*f2.num);
+    somma.num = (somma.den / f1.den * f1.num) + (somma.den / f2.den * f2.num);
     return somma;
 }
 
@@ -115,7 +123,7 @@ Frazione differenza(Frazione f1, Frazione f2)
 {
     Frazione differenza;
     differenza.den = mcm(f1.den, f2.den);
-    differenza.num = (differenza.den/f1.den*f1.num) - (differenza.den/f2.den*f2.num);
+    differenza.num = (differenza.den / f1.den * f1.num) - (differenza.den / f2.den * f2.num);
     return differenza;
 }
 
