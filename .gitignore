@@ -1,4 +1,4 @@
 .gitattributes
 **/a.out
 .vscode
-**/.o
+**.o
