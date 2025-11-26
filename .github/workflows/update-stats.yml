@@ -1,40 +1,44 @@
 name: Aggiorna Statistiche README
 
-
 on:
   push:
     branches: [ main, master ]
   schedule:
-    # Esegui ogni settimana (domenica alle 00:00)
     - cron: '0 0 * * 0'
-  workflow_dispatch: # Permette esecuzione manuale
+  workflow_dispatch:
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
-    - name: Checkout repository
+    - name: Checkout
       uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
     
-    - name: Genera statistiche
+    - name: Calcola statistiche
       run: |
-        # Conta file .c
+        # Conta i file
         TOTAL_C=$(find . -name "*.c" -type f | wc -l)
         TOTAL_H=$(find . -name "*.h" -type f | wc -l)
         TOTAL_LINES=$(find . -name "*.c" -type f -exec cat {} \; | wc -l)
-        TOTAL_DIRS=$(find . -type d ! -path "*/.git/*" ! -path "./.git" ! -name "." | wc -l)
+        TOTAL_DIRS=$(ls -d */ 2>/dev/null | grep -v ".git" | wc -l)
+        
+        # Calcola media
+        if [ "$TOTAL_C" -gt 0 ]; then
+          AVG=$((TOTAL_LINES / TOTAL_C))
+        else
+          AVG=0
+        fi
         
         # Crea la sezione statistiche
-        cat > stats_section.md << EOF
-        
+        cat > new_stats.md << EOF
         ## 📊 Statistiche Repository
         
         ![Linguaggio](https://img.shields.io/badge/Linguaggio-C-00599C?style=flat-square)
         ![File C](https://img.shields.io/badge/File%20C-${TOTAL_C}-blue?style=flat-square)
-        ![Righe di Codice](https://img.shields.io/badge/Righe%20di%20Codice-${TOTAL_LINES}-green?style=flat-square)
+        ![Righe di Codice](https://img.shields.io/badge/Righe-${TOTAL_LINES}-green?style=flat-square)
         
         | Metrica | Valore |
         |---------|--------|
@@ -42,39 +46,61 @@ jobs:
         | 📋 **File Header (.h)** | ${TOTAL_H} |
         | 📝 **Righe di codice** | ${TOTAL_LINES} |
         | 📁 **Categorie di esercizi** | ${TOTAL_DIRS} |
-        | 📊 **Media righe/file** | $((TOTAL_LINES / TOTAL_C)) |
+        | 📊 **Media righe/file** | ${AVG} |
         
         ### 📁 Distribuzione per categoria
         
         EOF
         
-        # Aggiungi statistiche per categoria
+        # Aggiungi la lista delle categorie
         for dir in */; do
-            if [ -d "$dir" ] && [ "$dir" != ".git/" ]; then
-                dir_name="${dir%/}"
-                c_count=$(find "$dir" -name "*.c" -type f | wc -l)
-                if [ $c_count -gt 0 ]; then
-                    echo "- **${dir_name}**: ${c_count} file" >> stats_section.md
-                fi
+          if [ -d "$dir" ] && [ "$dir" != ".git/" ] && [ "$dir" != ".github/" ]; then
+            dir_name="${dir%/}"
+            c_count=$(find "$dir" -name "*.c" -type f | wc -l)
+            if [ "$c_count" -gt 0 ]; then
+              echo "- **${dir_name}**: ${c_count} file" >> new_stats.md
             fi
+          fi
         done
         
-        echo "" >> stats_section.md
-        echo "*📅 Ultimo aggiornamento: $(date '+%d/%m/%Y')*" >> stats_section.md
+        echo "" >> new_stats.md
+        echo "*📅 Ultimo aggiornamento: $(date '+%d/%m/%Y alle %H:%M') UTC*" >> new_stats.md
     
-    - name: Aggiorna README
+    - name: Aggiorna README con Python
       run: |
-        # Rimuovi vecchia sezione statistiche se esiste
-        sed -i '/## 📊 Statistiche Repository/,/## 📌 Note pratiche/d' README.md
+        python3 << 'PYTHON_SCRIPT'
+        import re
         
-        # Inserisci nuove statistiche prima delle "Note pratiche"
-        sed -i '/## 📌 Note pratiche/r stats_section.md' README.md
+        # Leggi il README
+        with open('README.md', 'r', encoding='utf-8') as f:
+            readme = f.read()
         
-        rm stats_section.md
+        # Leggi le nuove statistiche
+        with open('new_stats.md', 'r', encoding='utf-8') as f:
+            new_stats = f.read()
+        
+        # Pattern per trovare la sezione statistiche
+        pattern = r'<!-- STATS_START -->.*?<!-- STATS_END -->'
+        replacement = f'<!-- STATS_START -->\n{new_stats}\n<!-- STATS_END -->'
+        
+        # Sostituisci
+        new_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+        
+        # Scrivi il nuovo README
+        with open('README.md', 'w', encoding='utf-8') as f:
+            f.write(new_readme)
+        
+        print("✅ README aggiornato con successo!")
+        PYTHON_SCRIPT
     
     - name: Commit e push
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
         git add README.md
-        git diff --quiet && git diff --staged --quiet || (git commit -m "📊 Aggiorna statistiche repository [bot]" && git push)
+        if git diff --staged --quiet; then
+          echo "Nessuna modifica da committare"
+        else
+          git commit -m "📊 Aggiorna statistiche [bot]"
+          git push
+        fi
