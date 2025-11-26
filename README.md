@@ -46,27 +46,27 @@
 
 ```
 Uni_C/
-├── adt               # Esercizi su Abstract Data Types
-├── array             # Esercizi sugli array
-├── array_puntatori   # Array e puntatori combinati
-├── char              # Gestione dei caratteri
-├── controllo_di_flusso # If, switch, cicli e connettivi logici
-├── debug             # Esercizi di debugging
-├── enum              # Esempi di enumerazioni
-├── esercizi_0210     # Esercizi vari del 02/10
-├── file              # Gestione file I/O
-├── funzioni          # Esercizi con funzioni
-├── iterazione        # Cicli for, while, do-while
-├── make              # Progetti con più file e Makefile
-├── multi-file        # Progetti multi-file con header separati
-├── numeri_virgola    # Esercizi su float e double
-├── primi_esercizi    # Esercizi base iniziali
-├── puntatori         # Puntatori e gestione memoria indiretta
-├── stringhe          # Manipolazione stringhe
-├── struct            # Strutture dati
-├── tutorato          # Esercizi svolti durante i tutorati
-├── union             # Esercizi con union
-├── variabili         # Esercizi su variabili e operatori
+├── adt                             # Esercizi su Abstract Data Types
+├── array                           # Esercizi sugli array
+├── array_puntatori                 # Array e puntatori combinati
+├── char                            # Gestione dei caratteri
+├── controllo_di_flusso             # If, switch, cicli e connettivi logici
+├── debug                           # Esercizi di debugging
+├── enum                            # Esempi di enumerazioni
+├── esercizi_0210                   # Esercizi vari del 02/10
+├── file                            # Gestione file I/O
+├── funzioni                        # Esercizi con funzioni
+├── iterazione                      # Cicli for, while, do-while
+├── make                            # Progetti con più file e Makefile
+├── multi-file                      # Progetti multi-file con header separati
+├── numeri_virgola                  # Esercizi su float e double
+├── primi_esercizi                  # Esercizi base iniziali
+├── puntatori                       # Puntatori e gestione memoria indiretta
+├── stringhe                        # Manipolazione stringhe
+├── struct                          # Strutture dati
+├── tutorato                        # Esercizi svolti durante i tutorati
+├── union                           # Esercizi con union
+├── variabili                       # Esercizi su variabili e operatori
 ```
 
 ---
