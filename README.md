@@ -71,31 +71,12 @@ Uni_C/
 
 ---
 
+<!-- STATS_START -->
 ## 📊 Statistiche Repository
 
-![Linguaggio](https://img.shields.io/badge/Linguaggio-C-00599C?style=flat-square)
-![Aggiornamento Automatico](https://img.shields.io/badge/Statistiche-Auto--aggiornate-brightgreen?style=flat-square)
+*Le statistiche verranno generate automaticamente qui*
 
-| Metrica | Valore |
-|---------|--------|
-| 📄 **File C totali** | *Aggiornato automaticamente* |
-| 📋 **File Header (.h)** | *Aggiornato automaticamente* |
-| 📝 **Righe di codice** | *Aggiornato automaticamente* |
-| 📁 **Categorie di esercizi** | 24 |
-| 📊 **Media righe/file** | *Calcolata automaticamente* |
-
-### 📁 Distribuzione per categoria
-
-*Le statistiche dettagliate per categoria vengono aggiornate automaticamente ad ogni push.*
-
-### 🔄 Come funziona
-
-Le statistiche vengono aggiornate automaticamente tramite GitHub Actions:
-- ✅ Ad ogni push sul branch principale
-- ✅ Ogni domenica alle 00:00 (aggiornamento settimanale)
-- ✅ Manualmente tramite l'interfaccia GitHub Actions
-
-*📅 Ultimo aggiornamento: Generato automaticamente*
+<!-- STATS_END -->
 
 ---
 
@@ -104,21 +85,3 @@ Le statistiche vengono aggiornate automaticamente tramite GitHub Actions:
 * Fai attenzione ai **nomi dei file / convenzioni** (es. `es5.c`, `es6_funzione.c`)
 * Aggiungi sempre un breve **commento all'inizio** del file per spiegare lo scopo
 * Le soluzioni sono orientate alla chiarezza e all'apprendimento, non sempre all'ottimizzazione estrema
-
----
-
-## 🛠️ Setup per le statistiche automatiche
-
-Per attivare l'aggiornamento automatico delle statistiche:
-
-1. Crea la cartella `.github/workflows/` nella root del progetto
-2. Salva il file `update-stats.yml` dentro questa cartella
-3. Fai commit e push - le statistiche si aggiorneranno automaticamente!
-
-```bash
-mkdir -p .github/workflows
-# Copia il file update-stats.yml nella cartella
-git add .github/workflows/update-stats.yml
-git commit -m "Aggiungi workflow per statistiche automatiche"
-git push
-```
