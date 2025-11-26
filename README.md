@@ -74,17 +74,17 @@ Uni_C/
 <!-- STATS_START -->
 ## 📊 Statistiche Repository
 
-![Linguaggio](https://img.shields.io/badge/Linguaggio-C-00599C?style=flat-square)
-![File C](https://img.shields.io/badge/File%20C-149-blue?style=flat-square)
-![Righe di Codice](https://img.shields.io/badge/Righe-4544-green?style=flat-square)
+![C](https://img.shields.io/badge/Linguaggio-C-00599C?style=flat-square)
+![Files](https://img.shields.io/badge/File_C-149-blue?style=flat-square)
+![Lines](https://img.shields.io/badge/Righe-4544-green?style=flat-square)
 
 | Metrica | Valore |
 |---------|--------|
-| 📄 **File C totali** | 149 |
-| 📋 **File Header (.h)** | 10 |
-| 📝 **Righe di codice** | 4544 |
-| 📁 **Categorie di esercizi** | 21 |
-| 📊 **Media righe/file** | 30 |
+| 📄 File C totali | 149 |
+| 📋 File Header (.h) | 10 |
+| 📝 Righe di codice | 4544 |
+| 📁 Categorie | 21 |
+| 📊 Media righe/file | 30 |
 
 ### 📁 Distribuzione per categoria
 
@@ -110,7 +110,7 @@ Uni_C/
 - **union**: 4 file
 - **variabili**: 10 file
 
-*📅 Ultimo aggiornamento: 26/11/2025 alle 18:17 UTC*
+*📅 Aggiornato: 26/11/2025 18:21 UTC*
 
 <!-- STATS_END -->
 
