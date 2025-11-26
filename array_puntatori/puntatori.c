@@ -8,6 +8,7 @@ int main()
     p = a; // p punta al primo elemento dell'array (equivale a: p = &a[0])
 
     printf("Valore del primo elemento: %d\n", *p);
+    
 
     // Spostiamo il puntatore di una posizione
     p++; // ora p punta a a[1]
