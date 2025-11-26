@@ -42,9 +42,38 @@
 
 ---
 
+## 📁 Struttura principale delle cartelle
+
+```
+Uni_C/
+├── adt
+├── array
+├── array_puntatori
+├── char
+├── controllo_di_flusso
+├── debug
+├── enum
+├── esercizi_0210
+├── file
+├── funzioni
+├── iterazione
+├── make
+├── multi-file
+├── numeri_virgola
+├── primi_esercizi
+├── puntatori
+├── stringhe
+├── struct
+├── tutorato
+├── union
+├── variabili
+├── README.md
+```
+
+---
+
 ## 📌 Note pratiche
 
 * Fai attenzione ai **nomi dei file / convenzioni** (es. `es5.c`, `es6_funzione.c`)
 * Aggiungi sempre un breve **commento all’inizio** del file per spiegare lo scopo
 * Le soluzioni sono orientate alla chiarezza e all’apprendimento, non sempre all’ottimizzazione estrema
-
