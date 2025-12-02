@@ -5,6 +5,12 @@
 
 int main(int argc, char *argv[])
 {
+    if(argc != 2)
+    {
+        printf("Linea comando non corretta\n");
+        exit(3);
+    }
+    
     FILE *pf;
     Dipendente d;
 

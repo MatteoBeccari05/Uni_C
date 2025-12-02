@@ -21,12 +21,18 @@ tale aggiornamento
 #include <string.h>
 #include "dipendente.h"
 
-int main()
+int main(int argc, char *argv[])
 {
+    if(argc != 2)
+    {
+        printf("Linea comando non corretta\n");
+        exit(3);
+    }
+
     FILE *pf;
     Dipendente dipendenti[5] = {{"Rossi", 1750.0}, {"Bianchi", 2000.0}, {"Verdi", 2700.0}, {"Esposito", 1200.0}, {"Thuram", 3000.0}};
 
-    if ((pf = fopen("stipendi.dat", "wb")) == NULL)
+    if ((pf = fopen(argv[1], "wb")) == NULL)
     {
         printf("Errore apertura file\n");
         exit(1);

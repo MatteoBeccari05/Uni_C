@@ -5,13 +5,18 @@
 #define DIM 100
 
 
-int main()
+int main(int argc, char *argv[])
 {
+    if(argc != 2)
+    {
+        printf("Linea comando non corretta\n");
+        exit(3);
+    }
     FILE *pf;
     int dl = 0;
     Dipendente dipendenti[DIM];
     
-    if ((pf = fopen("stipendi.dat", "rb")) == NULL)
+    if ((pf = fopen(argv[1], "rb")) == NULL)
     {
         printf("Errore apertura file\n");
         exit(1);
