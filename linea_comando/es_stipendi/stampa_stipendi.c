@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     if(argc != 2)
     {
-        printf("Linea comando non corretta\n");
+        printf("Usare: %s nome_file\n", argv[0]);
         exit(3);
     }
     FILE *pf;
