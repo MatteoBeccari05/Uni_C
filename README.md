@@ -75,16 +75,16 @@ Uni_C/
 ## 📊 Statistiche Repository
 
 ![C](https://img.shields.io/badge/Linguaggio-C-00599C?style=flat-square)
-![Files](https://img.shields.io/badge/File_C-179-blue?style=flat-square)
-![Lines](https://img.shields.io/badge/Righe-5809-green?style=flat-square)
+![Files](https://img.shields.io/badge/File_C-190-blue?style=flat-square)
+![Lines](https://img.shields.io/badge/Righe-6420-green?style=flat-square)
 
 | Metrica | Valore |
 |---------|--------|
-| 📄 File C totali | 179 |
-| 📋 File Header (.h) | 14 |
-| 📝 Righe di codice | 5809 |
-| 📁 Categorie | 25 |
-| 📊 Media righe/file | 32 |
+| 📄 File C totali | 190 |
+| 📋 File Header (.h) | 19 |
+| 📝 Righe di codice | 6420 |
+| 📁 Categorie | 26 |
+| 📊 Media righe/file | 33 |
 
 ### 📁 Distribuzione per categoria
 
@@ -102,6 +102,7 @@ Uni_C/
 - **funzioni**: 9 file
 - **iterazione**: 23 file
 - **linea_comando**: 4 file
+- **liste**: 11 file
 - **make**: 4 file
 - **multi-file**: 6 file
 - **numeri_virgola**: 2 file
@@ -114,7 +115,7 @@ Uni_C/
 - **union**: 4 file
 - **variabili**: 10 file
 
-*📅 Aggiornato: 09/12/2025 09:49 UTC*
+*📅 Aggiornato: 09/12/2025 22:13 UTC*
 
 <!-- STATS_END -->
 
