@@ -1,4 +1,4 @@
-typedef float Dato;
+typedef int Dato;
 
 typedef struct nodo
 {

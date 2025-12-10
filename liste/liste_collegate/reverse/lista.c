@@ -33,7 +33,7 @@ void stampa(Lista l1)
 {
     while (l1)
     {
-        printf("%.2f ", l1->dato);
+        printf("%d ", l1->dato);
         l1 = l1->next;
     }
     printf("\n");

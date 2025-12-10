@@ -5,9 +5,9 @@ int main()
 {
     Lista l1, l2;
     nuovaLista(&l1);
-    insTesta(&l1, 0.7);
-    insTesta(&l1, 2.3);
-    insTesta(&l1, 1.5);
+    insTesta(&l1, 2);
+    insTesta(&l1, 5);
+    insTesta(&l1, 7);
 
     reverse(l1, &l2);
     printf("Lista originale: ");
