@@ -76,13 +76,13 @@ Uni_C/
 
 ![C](https://img.shields.io/badge/Linguaggio-C-00599C?style=flat-square)
 ![Files](https://img.shields.io/badge/File_C-202-blue?style=flat-square)
-![Lines](https://img.shields.io/badge/Righe-7386-green?style=flat-square)
+![Lines](https://img.shields.io/badge/Righe-7376-green?style=flat-square)
 
 | Metrica | Valore |
 |---------|--------|
 | 📄 File C totali | 202 |
 | 📋 File Header (.h) | 20 |
-| 📝 Righe di codice | 7386 |
+| 📝 Righe di codice | 7376 |
 | 📁 Categorie | 26 |
 | 📊 Media righe/file | 36 |
 
@@ -115,7 +115,7 @@ Uni_C/
 - **union**: 4 file
 - **variabili**: 10 file
 
-*📅 Aggiornato: 10/12/2025 19:55 UTC*
+*📅 Aggiornato: 10/12/2025 20:00 UTC*
 
 <!-- STATS_END -->
 
