@@ -3,14 +3,6 @@
 #include <time.h>
 #include "lista.h"
 
-static void pulisci_input(void)
-{
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF)
-    {
-    }
-}
-
 int leggi_intero(const char *prompt)
 {
     int v;
@@ -18,9 +10,7 @@ int leggi_intero(const char *prompt)
     while (scanf("%d", &v) != 1)
     {
         printf("Input non valido. Riprova: ");
-        pulisci_input();
     }
-    pulisci_input();
     return v;
 }
 
