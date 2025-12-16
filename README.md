@@ -75,14 +75,14 @@ Uni_C/
 ## 📊 Statistiche Repository
 
 ![C](https://img.shields.io/badge/Linguaggio-C-00599C?style=flat-square)
-![Files](https://img.shields.io/badge/File_C-210-blue?style=flat-square)
-![Lines](https://img.shields.io/badge/Righe-7809-green?style=flat-square)
+![Files](https://img.shields.io/badge/File_C-212-blue?style=flat-square)
+![Lines](https://img.shields.io/badge/Righe-7905-green?style=flat-square)
 
 | Metrica | Valore |
 |---------|--------|
-| 📄 File C totali | 210 |
-| 📋 File Header (.h) | 24 |
-| 📝 Righe di codice | 7809 |
+| 📄 File C totali | 212 |
+| 📋 File Header (.h) | 25 |
+| 📝 Righe di codice | 7905 |
 | 📁 Categorie | 27 |
 | 📊 Media righe/file | 37 |
 
@@ -109,14 +109,14 @@ Uni_C/
 - **primi_esercizi**: 5 file
 - **puntatori**: 8 file
 - **ricorsione**: 3 file
-- **simulazioni_secondo_parziale**: 8 file
+- **simulazioni_secondo_parziale**: 10 file
 - **stringhe**: 7 file
 - **struct**: 5 file
 - **tutorato**: 15 file
 - **union**: 4 file
 - **variabili**: 10 file
 
-*📅 Aggiornato: 15/12/2025 19:55 UTC*
+*📅 Aggiornato: 16/12/2025 09:36 UTC*
 
 <!-- STATS_END -->
 
