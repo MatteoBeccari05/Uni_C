@@ -26,4 +26,3 @@ typedef Nodo *Lista;
 void nuovaLista(Lista *pl);
 void aggiorna(Lista *pl, Record r);
 void stampa(Lista l);
-void ordina(Lista *pl);
